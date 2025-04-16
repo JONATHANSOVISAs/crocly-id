@@ -1,0 +1,153 @@
+:root {
+    --primary: #2D2A32; /* Warna utama untuk teks dan elemen penting */
+    --accent: #e7b872; /* Warna aksen (highlight) */
+    --light: #f5f5f5; /* Warna latar belakang terang */
+    --text: #1d1d1d; /* Warna teks utama */
+    --card-bg: #ffffff; /* Warna latar belakang kartu */
+  }
+  
+
+/* General Body and Links (Pengaturan dasar untuk body dan link) */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text); /* Menggunakan warna teks utama */
+    background: #fff;
+  }
+  
+  /* Styling untuk semua link */
+  a {
+    color: var(--primary); /* Menggunakan warna utama untuk link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+  }
+  
+
+  /* Header Section (Pengaturan untuk header, termasuk logo dan navigasi) */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd; /* Garis pemisah di bawah header */
+    position: sticky; /* Membuat header tetap di atas saat scroll */
+    top: 0;
+    z-index: 1000; /* Menjaga agar header tetap di atas elemen lainnya */
+  }
+  
+  /* Kontainer utama dalam header */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Menu navigasi */
+  .nav {
+    display: flex;
+    justify-content: flex-end; /* Menyusun menu di sebelah kanan */
+    gap: 1.5rem; /* Memberikan jarak antar item menu */
+  }
+  
+  nav a {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+
+  .container-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Memastikan logo di kiri dan menu di kanan */
+    align-items: center; /* Menjaga logo dan menu sejajar secara vertikal */
+  }
+
+
+  /* Hero Section */
+.hero {
+    background: var(--light); /* Latar belakang terang */
+    text-align: center;
+    padding: 3rem 1rem 2rem; /* Padding atas, kanan-kiri, dan bawah */
+  }
+  
+  .logo-hero img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar bundar */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Menambahkan bayangan lembut */
+  }
+
+  
+  /* Penyusunan Section */
+.section {
+    padding: 3rem 1rem; /* Padding atas, kanan-kiri, dan bawah */
+  }
+  
+  /* Background Light untuk section tertentu */
+  .bg-light {
+    background: #fafafa; /* Latar belakang abu-abu terang */
+  }
+  
+  .text-center {
+    text-align: center; /* Menyusun teks menjadi rata tengah */
+  }
+
+  
+  /* Grid untuk menampilkan produk atau proyek */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Menyesuaikan kolom dengan lebar layar */
+    gap: 1.5rem; /* Jarak antar item dalam grid */
+    margin-top: 2rem;
+  }
+
+  
+  /* Styling untuk card */
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease; /* Transisi animasi saat hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Efek saat hover, sedikit mengangkat kartu */
+  }
+  
+  /* Gambar dalam kartu */
+  .card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  
+
+  /* Styling Footer */
+footer {
+    background: var(--primary); /* Menggunakan warna utama */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+  }
+
+
+  /* Responsif untuk layar dengan lebar maksimal 640px */
+@media (max-width: 640px) {
+    .nav {
+      flex-direction: column; /* Menyusun menu secara vertikal */
+      align-items: flex-start; /* Menyusun menu ke kiri */
+    }
+  }
+  
+
+  
+
